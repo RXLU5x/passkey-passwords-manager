@@ -1,0 +1,32 @@
+.ikonli-font-icon {
+	-fx-icon-color: white;
+    -fx-icon-size: 24;
+}
+
+.logo {
+	-fx-icon-size: 30;
+}
+
+.sidebar {
+	-fx-background-color: #4ab4d6;
+}
+
+.vaults, .account, .signout {
+	-fx-border-color: white;
+}
+
+.vaults, .signout {
+	-fx-border-width: 0 0 0.5 0;
+}
+
+.account {
+	-fx-border-width: 0;
+}
+
+.inactive {
+	-fx-opacity: 0.75;
+}
+
+.inactive:hover {
+	-fx-opacity: 1;
+}

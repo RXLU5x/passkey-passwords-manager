@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<fx:root xmlns="http://javafx.com/javafx/10.0.2-internal" type="javafx.scene.layout.BorderPane" stylesheets="/css/vaults/VaultsOperations.css" BorderPane.alignment="CENTER" fx:id="content" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" styleClass="edge-to-edge" BorderPane.alignment="CENTER">
+            <VBox fx:id="vaults" alignment="TOP_CENTER" prefWidth="250" styleClass="vaults"/>
+        </ScrollPane>
+    </left>
+
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+            <VBox fx:id="createVault" alignment="CENTER" spacing="10.0" VBox.vgrow="ALWAYS">
+                <FontIcon iconLiteral="far-plus-square" />
+                <TextFlow textAlignment="CENTER">
+                    <Text styleClass="header" text="Create Vault" />
+                </TextFlow>
+            </VBox>
+
+            <Separator prefWidth="200.0" />
+
+            <VBox fx:id="syncVaults" alignment="CENTER" spacing="10.0" VBox.vgrow="ALWAYS">
+                <FontIcon iconLiteral="fas-sync-alt" />
+                <TextFlow textAlignment="CENTER">
+                    <Text styleClass="header" text="Sync Vaults"/>
+                </TextFlow>
+            </VBox>
+        </VBox>
+    </center>
+</fx:root>

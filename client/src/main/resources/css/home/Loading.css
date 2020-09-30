@@ -1,0 +1,18 @@
+.loading {
+	-fx-background-color: white;
+	-fx-opacity: 0.85;
+}
+
+.label {
+	-fx-text-fill: #212121;
+	-fx-font-size: 15;
+	-fx-font-family: 'Montserrat SemiBold';
+}
+
+.progress-bar {
+	-fx-accent: #4ab4d6;
+}
+
+.progress-bar > .track {
+	-fx-background-color: #e5e5e5;
+}

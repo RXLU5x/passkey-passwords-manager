@@ -1,0 +1,365 @@
+{
+	"info": {
+		"_postman_id": "f95c1326-24a6-4e9e-a7ef-5f28976e8720",
+		"name": "P013",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"test\",\n\t\"passwordHash\": \"test\",\n\t\"firstname\": \"test\",\n\t\"lastname\": \"test\",\n\t\"email\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/users/signup",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\": \"test\",\n\t\"password\": \"test\",\n\t\"firstname\": \"test\",\n\t\"lastname\": \"test\",\n\t\"email\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8080/api/users/signup",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"signup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "jwt=eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJleHBpcmVzIjpudWxsfQ.yneyJMIU-tXEnC7Z3E_zvEl7oK3CjfGTAlOZCW34ytC6llsCSQDSmYrFpr4E2EuMk1Mb-17P3aChpZWTIcz9dw; Path=/; HttpOnly; Secure"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "54"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"36-JVZSOOlT/cSOOdxHVZIFRGMyZNU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 13 Apr 2020 20:29:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"info\": \"Your account has been created sucessufully!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"test\",\n\t\"passwordHash\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/users/signin",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "vaults",
+			"item": [
+				{
+					"name": "getVault",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8080/api/vaults?id=Te9BTnMBUcGkMl2FEccK",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vaults"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "Te9BTnMBUcGkMl2FEccK"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createVault",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"vault_header\": {},\n    \"vault_body\": {}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/vaults/create",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vaults",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteVault",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8080/api/vaults/delete?id=Tu9BTnMBUcGkMl2FLMcL",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vaults",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "Tu9BTnMBUcGkMl2FLMcL"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateVault",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"timeTag\": 1594746689788,\n    \"vault\": {\n        \"vault_header\": { \"example\": \"example\"},\n        \"vault_body\": {}\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/vaults?id=Vu9PTnMBUcGkMl2FWMf_",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vaults"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "Vu9PTnMBUcGkMl2FWMf_"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkVaults - All",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"All\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/vaults/check",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vaults",
+								"check"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkVaults - Only",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"Only\",\n    \"vaults\": [\n        {\n            \"id\": \"Vu9PTnMBUcGkMl2FWMf_\",\n            \"timeTag\": 1594746689788\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/api/vaults/check",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vaults",
+								"check"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

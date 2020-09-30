@@ -1,0 +1,36 @@
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<fx:root xmlns="http://javafx.com/javafx/11.0.1" type="javafx.scene.layout.VBox" alignment="CENTER" stylesheets="/css/vaults/VaultsSidebar.css" styleClass="sidebar" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets left="7.0" right="7.0" />
+    </padding>
+
+    <VBox fx:id="vaults" alignment="CENTER" spacing="5.0" styleClass="vaults">
+        <padding>
+            <Insets bottom="15.0" top="15.0" />
+        </padding>
+        <FontIcon iconLiteral="fas-lock"/>
+    </VBox>
+
+    <VBox fx:id="account" alignment="CENTER" spacing="5.0" styleClass="account, inactive">
+        <padding>
+            <Insets bottom="15.0" top="15.0" />
+        </padding>
+        <FontIcon iconLiteral="fas-user-alt"/>
+    </VBox>
+
+    <VBox fx:id="signOut" alignment="BOTTOM_CENTER" spacing="5.0" VBox.vgrow="ALWAYS" styleClass="signout">
+        <padding>
+            <Insets bottom="15.0" top="15.0" />
+        </padding>
+        <FontIcon iconLiteral="fas-door-open" />
+    </VBox>
+
+    <VBox alignment="CENTER" spacing="5.0" styleClass="active">
+        <padding>
+            <Insets bottom="15.0" top="15.0" />
+        </padding>
+        <FontIcon styleClass="logo" iconLiteral="fas-shield-alt"/>
+    </VBox>
+</fx:root>

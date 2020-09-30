@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<fx:root type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/10.0.2-internal" stylesheets="/css/TextField.css" alignment="CENTER_LEFT" spacing="5.0" xmlns:fx="http://javafx.com/fxml/1">
+    <TextFlow fx:id="textFlow">
+        <Text fx:id="title" text="Field"/>
+    </TextFlow>
+
+    <TextField fx:id="field"/>
+</fx:root>

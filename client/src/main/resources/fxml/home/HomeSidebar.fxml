@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<fx:root xmlns="http://javafx.com/javafx/10.0.2-internal" type="javafx.scene.layout.VBox" styleClass="sidebar" stylesheets="/css/home/HomeSidebar.css" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="25.0" left="20.0" right="20.0" top="25.0" />
+    </padding>
+
+    <VBox spacing="30.0">
+        <VBox fx:id="signUp" spacing="5.0">
+            <TextFlow>
+                <Text styleClass="header" text="Sign Up" />
+            </TextFlow>
+
+            <TextFlow maxWidth="170.0">
+                <Text styleClass="subheader" text="I don't have an account yet."/>
+            </TextFlow>
+        </VBox>
+
+        <VBox fx:id="signIn" spacing="5.0" styleClass="inactive">
+            <TextFlow>
+                <Text styleClass="header" text="Sign In" />
+            </TextFlow>
+
+            <TextFlow maxWidth="120.0">
+                <Text styleClass="subheader" text="I already have an account."/>
+            </TextFlow>
+        </VBox>
+    </VBox>
+
+    <VBox alignment="BOTTOM_CENTER" spacing="5.0" styleClass="logo" VBox.vgrow="ALWAYS">
+        <FontIcon iconLiteral="fas-user-shield" textAlignment="CENTER" />
+        <TextFlow textAlignment="CENTER">
+            <Text text="Passkey" />
+        </TextFlow>
+    </VBox>
+</fx:root>

@@ -1,0 +1,41 @@
+Text {
+    -fx-font-family: 'Montserrat Regular';
+	-fx-fill: #515151;
+	-fx-font-size: 14;
+}
+
+.button {
+	-fx-background-color: #e0e1e2;
+	-fx-background-radius: 3;
+	-fx-background-insets: 0;
+	-fx-border-width: 0;
+}
+
+.button Text {
+	-fx-font-family: 'Montserrat SemiBold';
+	-fx-fill: #5a5a5a;
+}
+
+.button:hover {
+	-fx-background-color: #cacbcd;
+}
+
+.button:hover Text {
+	-fx-fill: #282929;
+}
+
+.account {
+	-fx-background-color: white;
+}
+
+.header {
+    -fx-font-family: 'Montserrat SemiBold';
+	-fx-fill: #4ab4d6;
+	-fx-font-size: 36;
+}
+
+.subheader {
+	-fx-font-family: 'Montserrat SemiBold';
+	-fx-fill: #4ab4d6;
+	-fx-font-size: 20;
+}

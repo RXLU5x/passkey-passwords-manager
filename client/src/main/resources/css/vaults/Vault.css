@@ -1,0 +1,23 @@
+.vault {
+	-fx-background-color: white;
+}
+
+.vault-header {
+	-fx-background-color: transparent;
+	-fx-fill: #515151;
+	-fx-font-family: 'Montserrat SemiBold';
+	-fx-font-size: 16;
+}
+
+.vault:hover {
+	-fx-background-color: #f5f5f5;
+}
+
+.vault:hover Text {
+	-fx-fill: #282929;
+}
+
+.url {
+	-fx-fill: #515151;
+	-fx-font-size: 11;
+}

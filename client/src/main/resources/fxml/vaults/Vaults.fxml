@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import components.vaults.VaultsSidebar?>
+<?import javafx.scene.layout.BorderPane?>
+<fx:root xmlns="http://javafx.com/javafx/10.0.2-internal" type="javafx.scene.layout.BorderPane" fx:id="content" stylesheets="/css/Fonts.css, /css/vaults/Vaults.css" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <VaultsSidebar fx:id="sidebar"/>
+    </left>
+</fx:root>

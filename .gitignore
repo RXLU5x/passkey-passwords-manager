@@ -104,3 +104,6 @@ server/cert
 
 distribution/
 docs/
+
+log.xml
+**.db

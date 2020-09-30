@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import components.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<fx:root alignment="TOP_CENTER" spacing="25.0" styleClass="vaultcreate" stylesheets="/css/vaults/VaultCreate.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+     <TextFlow>
+        <Button fx:id="back" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" styleClass="back">
+            <graphic>
+                <FontIcon iconLiteral="fas-chevron-left" />
+            </graphic>
+        </Button>
+
+         <Text styleClass="vault-name" text="New Vault" textAlignment="CENTER" />
+     </TextFlow>
+
+    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" VBox.vgrow="ALWAYS">
+        <TextField fx:id="title" styleClass="text" text="Title" />
+
+        <HBox alignment="CENTER_LEFT" maxHeight="Infinity" maxWidth="Infinity" spacing="20.0">
+            <TextField fx:id="username" styleClass="text" text="Username" HBox.hgrow="ALWAYS" />
+            <PasswordField fx:id="passwordField" styleClass="text" HBox.hgrow="ALWAYS" />
+        </HBox>
+
+        <TextField fx:id="email" styleClass="text" text="Email" />
+        <TextField fx:id="address" styleClass="text" text="Address" />
+
+        <Accordion>
+            <panes>
+                <TitledPane text="Advanced">
+                    <VBox alignment="CENTER" spacing="20.0">
+                        <VBox alignment="CENTER_LEFT" spacing="5.0">
+                            <TextFlow>
+                                <Text styleClass="schemes" text="Encryption Scheme" />
+                            </TextFlow>
+
+                            <ChoiceBox fx:id="encSchemes" prefHeight="27.2" prefWidth="300.0" />
+                        </VBox>
+
+                        <VBox alignment="CENTER_LEFT" spacing="5.0">
+                            <TextFlow>
+                                <Text styleClass="schemes" text="Authentication Scheme" />
+                            </TextFlow>
+
+                            <ChoiceBox fx:id="authSchemes" prefHeight="27.2" prefWidth="300.0" />
+                        </VBox>
+                    </VBox>
+                </TitledPane>
+            </panes>
+        </Accordion>
+
+        <Button fx:id="submit" styleClass="submit" alignment="CENTER" contentDisplay="CENTER" maxWidth="Infinity" mnemonicParsing="false">
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+
+            <graphic>
+                <Text text="Submit" />
+            </graphic>
+        </Button>
+    </VBox>
+</fx:root>

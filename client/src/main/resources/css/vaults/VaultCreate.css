@@ -1,0 +1,121 @@
+.vaultcreate {
+	-fx-background-color: #f5f5f5;
+}
+
+.schemes, .text Text {
+	-fx-fill: #515151;
+	-fx-font-family: 'Montserrat SemiBold';
+	-fx-font-size: 12;
+}
+
+.vault-name {
+	-fx-background-color: transparent;
+	-fx-fill: #515151;
+	-fx-font-family: 'Montserrat SemiBold';
+	-fx-font-size: 14;
+}
+
+.back {
+	-fx-background-color: #f5f5f5;
+}
+
+.back .ikonli-font-icon {
+	-fx-icon-color: #515151;
+	-fx-icon-size: 14;
+}
+
+.back:hover .ikonli-font-icon {
+	-fx-icon-color: #282929;
+	-fx-icon-size: 14;
+}
+
+.titled-pane > .title {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 3;
+}
+
+.titled-pane > .title > .text {
+	-fx-fill: #515151;
+	-fx-font-family: 'Montserrat SemiBold';
+	-fx-font-size: 13;
+}
+
+.titled-pane > .title:hover > .text  {
+	-fx-fill: #282929;
+}
+
+.titled-pane > *.content {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-background-insets: 0;
+	-fx-padding: 1;
+}
+
+.titled-pane > .title > .arrow-button .arrow {
+	-fx-background-color: #515151;
+	-fx-background-insets: 0;
+	-fx-effect: null;
+}
+
+.titled-pane > .title:hover > .arrow-button .arrow {
+	-fx-background-color: #282929;
+}
+
+.choice-box {
+	-fx-background-color: white;
+	-fx-background-radius: 3;
+	-fx-background-insets: 0;
+	-fx-border-width: 0.5;
+	-fx-border-color: #dededf;
+	-fx-border-radius: 3;
+	-fx-border-insets: 0;
+	-fx-mark-color: #515151;
+}
+
+.choice-box .context-menu {
+	-fx-background-color: white;
+	-fx-background-radius: 3;
+	-fx-background-insets: 0;
+	-fx-border-width: 0.5;
+	-fx-border-color: #dededf;
+	-fx-border-radius: 3;
+	-fx-border-insets: 0;
+}
+
+.choice-box .menu-item:focused {
+	-fx-background-color: #f5f5f5;
+}
+
+.choice-box .menu-item > .label {
+	-fx-font-family: 'Montserrat Regular';
+	-fx-text-fill: #515151;
+}
+
+.choice-box .menu-item:focused > .label {
+	-fx-text-fill: #282929;
+}
+
+.submit {
+	-fx-background-color: #e0e1e2;
+	-fx-background-radius: 3;
+	-fx-background-insets: 0;
+	-fx-border-width: 0;
+}
+
+.submit Text {
+	-fx-font-family: 'Montserrat SemiBold';
+	-fx-fill: #5a5a5a;
+}
+
+.submit:hover {
+	-fx-background-color: #cacbcd;
+}
+
+.submit:hover Text {
+	-fx-fill: #282929;
+}
+
+.submit:hover .ikonli-font-icon {
+	-fx-icon-color: #282929;
+}

@@ -1,0 +1,23 @@
+Text {
+    -fx-font-family: 'Montserrat Regular';
+	-fx-fill: #212121;
+	-fx-font-smoothing-type: gray;
+}
+
+.oops {
+	-fx-font-size: 20;
+}
+
+.button {
+	-fx-background-color: #e0e1e2;
+	-fx-background-radius: 3;
+	-fx-background-insets: 0;
+	-fx-border-width: 0;
+	-fx-text-fill: #5a5a5a;
+}
+
+.button:hover .ikonli-font-icon {
+	-fx-background-color: #cacbcd;
+	-fx-text-fill: #282929;
+	-fx-icon-color: #282929;
+}

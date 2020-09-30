@@ -1,0 +1,13 @@
+.header {
+    -fx-font-family: 'Montserrat Regular';
+	-fx-font-size: 15;
+}
+
+.vaults {
+	-fx-background-color: #e4e4e4;
+}
+
+.ikonli-font-icon {
+	-fx-icon-color: #4ab4d6;
+    -fx-icon-size: 65;
+}

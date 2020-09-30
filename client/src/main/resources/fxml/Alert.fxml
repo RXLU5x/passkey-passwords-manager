@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<fx:root xmlns="http://javafx.com/javafx/11.0.1" type="javafx.scene.layout.VBox" maxHeight="180.0" maxWidth="387.0" minHeight="180.0" minWidth="387.0" prefHeight="180.0" prefWidth="387.0" spacing="20.0" stylesheets="/css/Fonts.css, /css/Alert.css" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+
+   <VBox spacing="10.0" VBox.vgrow="ALWAYS">
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <FontIcon iconLiteral="fas-bomb" iconSize="30" textAlignment="CENTER" />
+         <TextFlow>
+            <Text styleClass="oops" text="Oops!" textAlignment="CENTER" textOrigin="CENTER"/>
+         </TextFlow>
+      </HBox>
+
+      <TextFlow>
+         <Text fx:id="message" wrappingWidth="300" text="Message"/>
+      </TextFlow>
+   </VBox>
+
+   <HBox alignment="CENTER_RIGHT">
+      <Button fx:id="okButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="OK"/>
+   </HBox>
+</fx:root>

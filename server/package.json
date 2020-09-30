@@ -1,0 +1,33 @@
+{
+  "name": "vault_server",
+  "version": "0.0.1",
+  "description": "Server side Components for P013-LEIRT-SV-1920 @ ISEL",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "cross-env JWT_KEY=0000 JWT_EXPIRATION_MS=3600000 node server.js",
+    "start:prod": "node"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "jshint": "^2.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorinojp/P013-LEIRT-SV-1920.git"
+  },
+  "author": "",
+  "license": "https://github.com/vitorinojp/P013-LEIRT-SV-1920/blob/master/LICENSE",
+  "bugs": {
+    "url": "https://github.com/vitorinojp/P013-LEIRT-SV-1920/issues"
+  },
+  "homepage": "https://github.com/vitorinojp/P013-LEIRT-SV-1920#readme"
+}

@@ -1,0 +1,34 @@
+.signin {
+	-fx-background-color: white;
+}
+
+.welcome-back-title {
+	-fx-font-size: 36;
+	-fx-font-family: 'Montserrat SemiBold';
+	-fx-fill: #4ab4d6;
+}
+
+.welcome-back-message {
+	-fx-font-size: 14;
+	-fx-fill: #515151;
+}
+
+.button {
+	-fx-background-color: #e0e1e2;
+	-fx-background-radius: 3;
+	-fx-background-insets: 0;
+	-fx-border-width: 0;
+}
+
+.button:hover {
+	-fx-background-color: #cacbcd;
+}
+
+.button Text {
+	-fx-fill: #5a5a5a;
+	-fx-font-family: 'Montserrat SemiBold';
+}
+
+.button:hover Text {
+	-fx-fill: #282929;
+}
